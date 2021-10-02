@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 
 // Connect to MongoDB via Mongoose
 seeder.connect(
-  'mongodb://127.0.0.1:27017/db_staycation',
+  'mongodb+srv://codeathome:bwamern@cluster0.jnzk2.mongodb.net/db_staycation?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
     useCreateIndex: true,
@@ -104,6 +104,7 @@ var data = [
         description:
           'Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.',
         unit: 'night',
+        categoryId: mongoose.Types.ObjectId('5e96cbe292b97300fc901111'),
         imageId: [
           // done
           { _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90cdb4') },
@@ -150,6 +151,7 @@ var data = [
         description:
           'Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.',
         unit: 'night',
+        categoryId: mongoose.Types.ObjectId('5e96cbe292b97300fc901111'),
         imageId: [
           // done
           { _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90cdb1') },
